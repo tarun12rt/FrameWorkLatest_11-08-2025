@@ -1,5 +1,5 @@
-@ugujh
-  Feature: jndssfsad
+@loginPage_Sample
+  Feature: Sample
 
     @test1
     Scenario: Verify Homepage
