@@ -8,7 +8,6 @@ import com.aventstack.extentreports.ExtentTest;
 import utils.ExtentReportManager;
 import utils.ExtentTestManager;
 import utils.ReportLogger;
-import utils.ScreenshotUtils;
 import utils.DriverManager;
 
 public class Hooks {

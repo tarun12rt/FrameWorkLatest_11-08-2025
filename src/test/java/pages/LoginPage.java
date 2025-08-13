@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import utils.DriverManager;
-import utils.ReportLogger;
 
 public class LoginPage {
     private WebDriver driver;
