@@ -25,7 +25,7 @@ public class ExtentReportManager {
 
     private static void createInstance() {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String baseDir = System.getProperty("user.dir") + "/test-output/ExtentReports/";
+        String baseDir = System.getProperty("user.dir") + "/reports/";
         try {
             Files.createDirectories(Paths.get(baseDir));
         } catch (IOException e) {
@@ -59,7 +59,7 @@ public class ExtentReportManager {
     public static void copyToLatest() {
         if (reportFilePath == null) return;
         Path src = Paths.get(reportFilePath);
-        Path destDir = Paths.get(System.getProperty("user.dir") + "/test-output/ExtentReports/latest/");
+        Path destDir = Paths.get(System.getProperty("user.dir") + "/latestReport/");
         try {
             Files.createDirectories(destDir);
             Path dest = destDir.resolve("ExtentReport.html");
