@@ -1,5 +1,7 @@
 package utils;
 
+import utils_v2.ConfigReader_Project;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
