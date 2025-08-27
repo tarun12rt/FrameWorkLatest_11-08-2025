@@ -19,3 +19,15 @@ Feature: homepage
     Then I verify banner on homepage
 
 
+  @hp1
+  Scenario: Verify Banner
+    Given I launch the URL on "Chrome" Browser
+    And I verify "Subscription form" in footer
+#    And I verify "Site logo" in footer
+#    And I verify "twitter link" in footer
+#    And I verify "facebook link" in footer
+#    And I verify "google link" in footer
+#    And I verify "you tube link" in footer
+#    And I verify "linkedin link" in footer
+
+
