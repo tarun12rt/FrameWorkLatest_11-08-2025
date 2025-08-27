@@ -23,6 +23,7 @@ public class HomePage {
     By aTSiteBtn= By.xpath("//a[normalize-space()='AT Site']");
     By demoSiteBtn= By.xpath("//a[normalize-space()='Demo Site']");
     By addToCartBtn= By.xpath("//a[@title='Start shopping']");
+    By subscriptionForm = By.xpath("//h4[normalize-space()='Subscribe Here']/parent::div");
 
     public void clickYouTubeIcon() {
         actions.fnClick(youtubeIcon);
@@ -61,4 +62,27 @@ public class HomePage {
     }
 
 
+    public boolean verifyFooterElements(String strValue) {
+        actions.fnScrollToBottom();
+        switch (strValue.toLowerCase()) {
+            case "subscription form":
+                return actions.fnIsDisplayed(subscriptionForm);
+//            case "shop button":
+//                return actions.fnIsDisplayed(shopButton);
+//            case "logo":
+//                return actions.fnIsDisplayed(logo);
+//            case "my account button":
+//                return actions.fnIsDisplayed(myAccountButton);
+//            case "test cases button":
+//                return actions.fnIsDisplayed(testCasesBtn);
+//            case "at site button":
+//                return actions.fnIsDisplayed(aTSiteBtn);
+//            case "demo site button":
+//                return actions.fnIsDisplayed(demoSiteBtn);
+//            case "add to cart button":
+//                return actions.fnIsDisplayed(addToCartBtn);
+            default:
+                return false;
+        }
+    }
 }

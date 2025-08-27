@@ -29,4 +29,9 @@ public class homepageStepDef {
     public void iLaunchTheURL() {
         homePage.launchUrl();
     }
+
+    @And("I verify {string} in footer")
+    public void iVerifyInFooter(String strValue) {
+        Assert.assertTrue(homePage.verifyFooterElements(strValue));
+    }
 }
